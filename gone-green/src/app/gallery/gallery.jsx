@@ -35,12 +35,12 @@ const renderImages = () => {
 };
 
 return (
-    <main className='page'>
+    <div className='gallery-page'>
         <h1>Gallery</h1>
         <div className='image-gallery'>
             {renderImages()}
         </div>
-    </main>
+    </div>
 );
 }
 

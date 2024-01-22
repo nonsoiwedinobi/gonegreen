@@ -1,13 +1,13 @@
 // // pages.tsx
 
 import "./layout.css";
-import Gallery from "./gallery/page"
-
+import Gallery from "./gallery/gallery"
+import Contact from "./contact/contact"
 
 export default function Home() {
     return (
-      <main className="page">
-        <Gallery />
-      </main>
+        <Contact />
     );
   }
+
+  //change Contact to Gallery to view Gallery page and visa versa
