@@ -15,7 +15,7 @@ const links = [
 const Menu = () => {
   const [open, setOpen] = useState(false);
 
-  // Temporary
+  // Temporaryy
   const user = false;
   return (
     <div>
