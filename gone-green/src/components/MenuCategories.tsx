@@ -1,6 +1,6 @@
 import React from 'react';
 import menuData from '../MenuData.json';
-
+console.log(menuData);
 interface MenuItemProps {
   name: string;
   price: number;
