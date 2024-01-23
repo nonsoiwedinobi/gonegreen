@@ -1,12 +1,14 @@
 import MenuPage from '../components/MenuPage';
-//import MenuSearch from '../components/MenuSearch';
+import Featured from "@/components/Featured";
+import Offer from "@/components/Offer";
+import Slider from "@/components/Slider";
 
-const HomePage = () => {
+export default function Home() {
   return (
-    <div>
-      <MenuPage />
-    </div>
+    <main>
+      <Slider />
+      <Featured />
+      <Offer />
+    </main>
   );
-};
-
-export default HomePage;
+}
