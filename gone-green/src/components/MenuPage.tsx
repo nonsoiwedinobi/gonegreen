@@ -5,6 +5,7 @@ import Layout from './Layout';
 import Menu from './MenuCategories';
 import MenuNavbar from './MenuNavBar';
 import menuData from '../MenuData.json';
+import MenuSearch from './MenuSearch';
 
 const MenuPage = () => {
   const [activeCategory, setActiveCategory] = useState('');
@@ -23,6 +24,7 @@ const MenuPage = () => {
           categories={menuData.categories.map((cat) => cat.name)}
           setActiveCategory={setActiveCategory}
         />
+        <MenuSearch />
         <Menu category={activeCategory} />
       </div>
     </Layout>

@@ -1,12 +1,12 @@
 'use client';
 import React, { useState } from 'react';
 import menuData from '../MenuData.json';
-import MenuItem from './MenuCategories';
 import Search from './Search';
+import MenuItem, { MenuItemProps } from './MenuItem';
 
 interface Category {
   name: string;
-  items: MenuItem[];
+  items: MenuItemProps[];
 }
 
 const MenuSearch: React.FC = () => {
@@ -21,7 +21,7 @@ const MenuSearch: React.FC = () => {
       return {
         ...category,
         items: category.items.filter((item) =>
-          item.ingredients.some((ingredient) => ingredient.toLowerCase().includes(query.toLowerCase()))
+          item.ingredients && item.ingredients.some((ingredient) => ingredient.toLowerCase().includes(query.toLowerCase()))
         ),
       };
     });
@@ -30,16 +30,27 @@ const MenuSearch: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="container mx-auto p-4">
       <Search onSearch={handleSearch} />
-      {filteredMenu.map((category) => (
-        <div key={category.name}>
-          <h2 className="text-xl font-bold mb-2">{category.name} Menu</h2>
-          {category.items.map((item, index) => (
-            <MenuItem key={index} name={item.name} price={item.price} />
+
+      {searchQuery && (
+        <div>
+          {filteredMenu.map((category) => (
+            <div key={category.name} className="my-4">
+              <h2 className="text-orange font-bold mb-2">{category.name} Menu</h2>
+              {category.items.map((item, index) => (
+                <MenuItem key={index} name={item.name} />
+              ))}
+            </div>
           ))}
         </div>
-      ))}
+      )}
+
+      {!searchQuery && (
+        <div className="my-4">
+          <p className="text-gray-600">Please try different ingredients</p>
+        </div>
+      )}
     </div>
   );
 };
