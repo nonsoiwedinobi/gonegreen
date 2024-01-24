@@ -18,7 +18,7 @@ const Gallery = () => {
 
 // return the images array
 const renderImages = () => {
-    return images.map((imageSrc, index) => (
+    return images.map((imageSrc:string, index:number) => (
         <div key={index} className='image-item-container'>
             <Image
                 alt={`Image ${index + 1}`}
