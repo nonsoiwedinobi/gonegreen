@@ -21,7 +21,7 @@ const Search: React.FC<SearchProps> = ({ onSearch }) => {
         onChange={(e) => setQuery(e.target.value)}
         className="p-2 border border-gray-300 rounded"
       />
-      <button onClick={handleSearch} className="ml-2 p-2 bg-blue-500 text-white rounded">
+      <button onClick={handleSearch} className="ml-2 p-2 bg-orange-500 text-white rounded">
         Search
       </button>
     </div>

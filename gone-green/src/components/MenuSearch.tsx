@@ -30,7 +30,7 @@ const MenuSearch: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto px-6 py-4">
+    <div className="bg-lime-100 container mx-1.5 my-1.5 px-6 py-4">
       <Search onSearch={handleSearch} />
 
       {searchQuery && (

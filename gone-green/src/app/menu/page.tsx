@@ -18,7 +18,7 @@ const MenuPage = () => {
 
   return (
     
-      <div className="text-3xl-green font-bold">
+      <div className="text-3xl-green">
         <MenuNavbar
           categories={menuData.categories.map((cat) => cat.name)}
           setActiveCategory={setActiveCategory}
