@@ -7,7 +7,7 @@ interface MenuItemProps {
 }
 
 const MenuItem: React.FC<MenuItemProps> = ({ name, price }) => (
-  <div className="menuItem">
+  <div className="menuItem px-6">
     <span className="itemName">{name}</span>
     <span className="itemPrice">N{price}</span>
   </div>
@@ -28,7 +28,7 @@ const Menu: React.FC<MenuProps> = ({ category }) => {
 
   return (
     <div>
-      <h2 className="flex justify-between text-xl font-bold mb-2">{category} Menu</h2>
+      <h2 className="flex justify-between text-xl font-bold mb-2 px-6">{category} Menu</h2>
       {categoryData.items.map((item, index) => (
         <MenuItem key={index} name={item.name} price={item.price} />
       ))}

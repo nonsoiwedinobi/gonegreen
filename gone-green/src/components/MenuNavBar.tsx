@@ -13,7 +13,7 @@ const MenuNavbar: React.FC<MenuNavbarProps> = ({ categories, setActiveCategory }
     setMounted(true);
   });
   return mounted && (
-    <nav className="bg-green-800 p-4">
+    <nav className="bg-green-700 p-4">
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-purple text-2xl font-bold"></div>
         <ul className="space-x-4">

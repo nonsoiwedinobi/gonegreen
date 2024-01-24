@@ -30,14 +30,16 @@ const MenuSearch: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto px-6 py-4">
       <Search onSearch={handleSearch} />
 
       {searchQuery && (
         <div>
           {filteredMenu.map((category) => (
             <div key={category.name} className="my-4">
-              <h2 className="text-orange font-bold mb-2">{category.name} Menu</h2>
+              <h2 className="text-orange font-bold mb-2">
+                {category.name} Menu
+              </h2>
               {category.items.map((item, index) => (
                 <MenuItem key={index} name={item.name} />
               ))}
