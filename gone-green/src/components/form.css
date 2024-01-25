@@ -33,24 +33,9 @@
     cursor: not-allowed;
 }
 
-.fake-location {
-    margin-top: 1rem;
-}
-
-.fake-location p {
-    margin: 0.5rem 0;
-}
-
-.locations-container {
-    margin-top: 4rem;
-}
-
-.location-section {
-    margin-bottom: 1rem;
-}
-
-.location-title {
-    font-weight: bold;
+.submit-button:hover {
+    background-color: yellow;
+    cursor: pointer;
 }
 
 

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Form from "@/components/Form";
+import ContactForm from "@/components/Form";
 import Footer from "@/components/Footer";
 import MenuPage from "@/components/MenuPage";
 
@@ -25,7 +25,7 @@ export default function RootLayout({
         <Notification />
         <Navbar />
         {children}
-        <Form />
+        <ContactForm />
         <Footer />
       </body>
     </html>
