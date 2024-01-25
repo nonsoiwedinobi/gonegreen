@@ -65,7 +65,7 @@ Join our growing community of like-minded individuals who are passionate about s
 
 ## Web URL
 
-- https://nonsoiwedinobi.github.io/what2watch/
+- https://github.com/nonsoiwedinobi/gonegreen
 
 ## License
 
