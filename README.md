@@ -40,8 +40,10 @@ Join our growing community of like-minded individuals who are passionate about s
    ```
 3. Open the index.html file in your preferred web browser.
 
+
 ## Usage
 
+Link to deployed app [GONEGREEN](https://ubiquitous-manatee-ae1384.netlify.app/menu)
 1. Open the application in your web browser.
 2. Navigate to menu page
 3. Use the search bar to type the fruit/smoothie you want.
