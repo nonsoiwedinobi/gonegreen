@@ -65,7 +65,7 @@ Join our growing community of like-minded individuals who are passionate about s
 
 ## Web URL
 
-- https://github.com/nonsoiwedinobi/gonegreen
+- https://ubiquitous-manatee-ae1384.netlify.app/
 
 ## License
 
