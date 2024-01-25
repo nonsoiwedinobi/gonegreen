@@ -13,7 +13,7 @@ const MenuCategoryPage = () => {
   return (
     <Layout>
       <h1>{category} Menu</h1>
-      <Menu category={category as string} menuDataEl={categoryData} />
+      <Menu category={category as string}/>
     </Layout>
   );
 };
